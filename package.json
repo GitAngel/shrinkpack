@@ -35,9 +35,11 @@
     "when": "3.7.7"
   },
   "devDependencies": {
+    "ava": "0.14.0",
     "commit-release": "0.5.0",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.0.3",
+    "mock-fs": "3.9.0",
     "semistandard": "7.0.5",
     "validate-commit-msg": "2.3.1"
   },
@@ -63,6 +65,7 @@
   },
   "scripts": {
     "commit-release": "commit-release",
-    "lint": "semistandard --format"
+    "lint": "semistandard --format",
+    "test": "ava test/**/*.test.js"
   }
 }
